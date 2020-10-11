@@ -47,8 +47,31 @@ a:hover
 .banner
 {
     margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.bannertext
+{
+   width: 737px;
+   height: 95px;
+   padding-left: 10px;
+    background-color: white;
+    color: green;
+    
+}
+.bannertext h2, .bannertext h3
+{
+    line-height: 10px;
+}
+
+.A
+{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    vertical-align: top;
+    line-height: 0;
+    height: auto;
 }
 .sections
 {
@@ -108,6 +131,7 @@ margin-right: auto;
     footer ul
     {
      list-style-type: none;
+     font-size: 18px;
     }
 
     .footer-block
