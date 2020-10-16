@@ -1,141 +1,245 @@
-body{
-    font-family:Comfortaa;font-size: 22px;
-    background-color: grey;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    background-color: #e9e7e4
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container
+{
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 0 2rem;
+  
+}
+
 header
 {
-    font-family:Comfortaa;font-size: 20px;
+    font-family: 'Roboto Slab', serif; font-size: 18px;
     background-color:white;
-    clear: both;
     height: 85px;
+   border-bottom: 2px solid #6eaa30 ;
 }
 .logo
 {
-    
-    margin-left: 200px;
-   
+    margin: 0 2rem;
 
 }
+
 .logo img
 {
-    height: 130px;
-    width: 130px;
-    float: left;
+    height: 100px;
+    width: 100px;
+    margin-top: 12px;
+    
 }
 .navbar a
 {
    
    color: black;
    text-align: center;
-   padding: 20px 20px;
    text-decoration: none;
-   float: right;
+   padding: 0 15px;
     
 }
 a:hover
 {
-    background-color: greenyellow;
+    background-color: #6eaa30;
     color: white;
-    padding: 20px 20px;
+    padding: 16px 15px;
 }
 .navbar ul
 {
-    display: inline;list-style-type: none;
+    display: flex;
+    flex-direction:row;
+    list-style-type: none;
+  
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 2rem;
 }
 
 .banner
 {
-    margin-top: 30px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-.bantext
-{
-   width: 737px;
-   height: 95px;
-   padding-left: 10px;
-    background-color: white;
-    color: green;
-    
-}
-.bannertext h2, .bannertext h3
-{
-    line-height: 10px;
+    padding: 30px 4rem 0 4rem;
+           
 }
 
-.A
+.banner img
 {
-    display: flex;
-    align-self: center;
-    flex-direction: column;
-    vertical-align: top;
-    line-height: 0;
-    height: auto;
-}
-.sections
-{
-display: flex;
-width: 50%;
-margin-top: 10px;
-margin-bottom: 10px;
-margin-left: auto;
-margin-right: auto;
-}
-.section-a
-{
-    background-color: white;
-    margin-right: 10px;
-    font-size: 15px;
-    padding: 10px 10px;
-    width: 50%;
-}
-
-.section-b
-{
-    background-color: white;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 15px;
-    padding: 10px 10px;
-    width: 50%;
-}
-
-.section-c
-{
-    background-color: white;
-    margin-left:10px;
-    font-size: 15px;
-    padding: 10px 10px;
-    width: 50%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
    
 }
-.section-c ul
+
+.bannertext
 {
-    background-color: white;
-    margin:auto
+    background-color: white; font-size: 30px;
+    color: #6eaa30;
+    font-family: 'Roboto Slab', serif;   
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+       
 }
 
+
+.sections
+{
+
+display: flex;
+padding: 1rem 3rem 0 3rem;
+height: 20rem;
+
+}
+
+
+
+.section
+{
+    background-color: white;
+    width: 40rem;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 13px;
+    font-family: 'Roboto Slab', serif;  
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+
+
+.section a
+{
+    background-color:#6eaa30 ;
+    padding:0.5rem 0.5rem ;
+    text-decoration: none;
+    color: white;
+
+    
+
+    }
+
+   
+
+
+.section ul
+{
+    background-color: white;
+display: flex;
+flex-direction: column;
+line-height: 2;
+justify-self: center;
+}
+
+.section li
+{
+    display: flex;
+    line-height: 2;
+}
+ .section h4
+ {
+     color: #6eaa30;
+     font-size: 20px;
+     font-family: 'Roboto Slab', serif;
+     line-height: 2;
+     font-weight: bold;
+ }
+ .section img
+ {
+height: 50%;
+width: 100%;
+ }
+
+ .btn
+ {
+     margin-top: auto;
+     margin-left: 70%;
+ }
+ 
 
 
 
     footer
     {
-        margin-top: 30px;
+        padding-top: 1rem;
         display: flex;
-        background-color: rgba(101, 148, 70, 0.849);
+        background-color:#6eaa30;
         justify-content: center;
         color: white;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 200;
+        line-height: 1.5;
+        
         
     }
     footer ul
     {
      list-style-type: none;
-     font-size: 18px;
+     font-size: 14px;
+     
+    }
+    footer ul h5
+    {
+      font-size: 18px;
+      
     }
 
     .footer-block
     {
-        margin-right: 20px;
-        margin-left: 20px;
+        margin: 0 6vw;
     }
+.date
+{
+    color: #6eaa30;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+
+}
