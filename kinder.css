@@ -45,15 +45,42 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
+    border-spacing: 0;
+    
 }
 
+
+@media screen and (max-width: 3180px) {
+    .container
+    {
+        margin: 0 auto;
+        width: 60%;
+        padding: 0 2rem;
+      
+    }
+
+    }
+
+
+@media screen and (max-width: 1700px) {
+    .container
+    {
+        margin: 0 auto;
+        width: 80%;
+        padding: 0 2rem;
+      
+    }
+
+    }
+
+@media screen and (max-width: 1100px) {
 .container
 {
     margin: 0 auto;
-    max-width: 80%;
+    width: 90%;
     padding: 0 2rem;
   
+}
 }
 
 header
@@ -135,7 +162,7 @@ a:hover
 
 display: flex;
 padding: 1rem 3rem 0 3rem;
-height: 20rem;
+height: 40vh;
 
 }
 
@@ -152,6 +179,8 @@ height: 20rem;
     display: flex;
     flex-direction: column;
     line-height: 2;
+   
+    
 }
 
 
@@ -162,27 +191,17 @@ height: 20rem;
     text-decoration: none;
     color: white;
 
-    
-
     }
 
    
 
 
-.section ul
+#td
 {
-    background-color: white;
-display: flex;
-flex-direction: column;
-line-height: 2;
-justify-self: center;
+padding-right: 1rem;
 }
 
-.section li
-{
-    display: flex;
-    line-height: 2;
-}
+
  .section h4
  {
      color: #6eaa30;
@@ -199,8 +218,10 @@ width: 100%;
 
  .btn
  {
-     margin-top: auto;
-     margin-left: 70%;
+     margin-top:auto;
+     margin-left: auto;
+     align-self: right;
+     
  }
  
 
@@ -240,6 +261,4 @@ width: 100%;
     color: #6eaa30;
     font-size: 20px;
     font-weight: bold;
-    line-height: 1;
-
 }
