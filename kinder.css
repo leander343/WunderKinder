@@ -276,3 +276,44 @@ width: 100%;
     font-size: 20px;
     font-weight: bold;
 }
+
+.overlay
+{
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.3);
+    top: 0;
+    right: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+   
+
+}
+
+.modal 
+{
+
+    display: block;
+    position: fixed;
+   left: 30vmax;
+   right: 30vmax;
+   top: 30vmax;
+   bottom: 30vmax;
+   z-index: 2;
+  
+    
+}
+
+.modal p
+{
+   font-size: 40px;
+   text-align: center;
+   background-color: white;
+   padding: 50px;
+
+
+}
+
+
