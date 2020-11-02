@@ -91,10 +91,24 @@ table {
   
 }
 
+
+
 .sections
 {
     height: 50vh;
 }
+}
+
+.content
+{
+    width: 50vw;
+    text-align: center;
+    margin:auto;
+    padding: 40px;
+    background-color: white;
+    z-index: 1;
+    outline: 100vh solid rgb(0,0,0,0.5);
+
 }
 
 header
@@ -149,6 +163,7 @@ a:hover
 .banner
 {
     padding: 30px 4rem 0 4rem;
+    display: block;
            
 }
 
